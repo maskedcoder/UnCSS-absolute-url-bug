@@ -14,6 +14,7 @@ gulp.task('styles', ['clean'], function() {
   return gulp.src('app/**/*.css')
     .pipe(uncss({
       html: ['app/**/*.html'],
+      timeout: 50,
       ignore: [
         /\.no-/,
         /\.is-/,
