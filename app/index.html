@@ -1,30 +1,21 @@
 <!DOCTYPE html>
-<html class="u-bg--gray">
+<html>
   <head>
-    <title>UnCSS Test</title>
+    <title class="no-problem">UnCSS Test</title>
 
-    <script src="//use.edgefonts.net/abel.js"></script>
+    <script src="https://use.typekit.net/een3doo.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
 
   <body>
-    <main>
-      <header class="c-head">
-        <h1 class="c-head__title">UnCSS Test</h1>
-      </header>
+    <p>The &lt;html&gt; has <code>color: #333</code>.</p>
 
-      <section class="o-wrapper c-content  u-bg--white">
+    <p class="should-remain">This text should be blue.</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas incidunt suscipit impedit, reiciendis possimus qui? Enim sint officia ipsam odio quod accusantium, adipisci, qui ipsum ad autem iste voluptate sit.</p>
+    <p><strong>And this should be purple</strong></p>
 
-          <ul class="c-list">
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, at recusandae provident ad quaerat perferendis corporis laboriosam mollitia commodi maxime fugiat facilis deleniti porro totam! Incidunt, ea, veritatis. Magni, eum.</li>
-            <li>Dolor unde laudantium aspernatur facilis eaque, voluptate similique dolores tempora maxime. Voluptatem repellendus ipsam sit incidunt consequuntur quo dolorum dignissimos voluptatibus numquam. Animi quas, temporibus, unde voluptas est hic nostrum!</li>
-            <li>Aliquam officiis voluptatibus voluptas tempore saepe expedita quasi sunt voluptatem, minus eius est placeat, repudiandae officia vitae consequuntur debitis tempora? Error laudantium sed nostrum eius, beatae ut! Molestias, in, mollitia?</li>
-          </ul>
-
-      </section>
-    </main>
+    <p class="no-problem">This should be green. Selectors that match elements prior to the TypeKit link will have no problem. This paragraph shares a class with the &lt;title&gt; element.</p>
   </body>
 </html>
